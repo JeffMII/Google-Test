@@ -3,9 +3,9 @@ from flask import Flask, request
 app = Flask(__name__)
 
 @app.get('/check')
-def check():
+def check(something):
   
-  return { 'hello': 'world!' }
+  return { 'hello': something }
 
 if __name__ == '__main__':
   
